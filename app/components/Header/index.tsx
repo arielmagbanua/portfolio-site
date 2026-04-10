@@ -1,18 +1,32 @@
 import styles from "./Header.module.css";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 text-white shadow-md py-4 ${styles["header-bg"]}`}
+      className={`fixed top-0 left-0 right-0 z-50 shadow-md px-16 py-4 flex justify-between items-baseline ${styles["header-bg"]}`}
     >
-      <div className={`container mx-auto px-4 py-2 ${styles["logo-div"]}`}>
+      <div className={`py-2 ${styles["logo-div"]}`}>
         <span className={`text-3xl font-bold ${styles["logo-title-name"]}`}>
           Ariel Magbanua
         </span>
-        <span className={`text-4xl font-bold ${styles["logo-title-dot"]}`}>
+        <span className={`text-3xl font-bold ${styles["logo-title-dot"]}`}>
           .
         </span>
       </div>
+      <nav>
+        <ul className="flex justify-between items-baseline gap-8">
+          <li className={styles["nav-item"]}>
+            <Link href="/">About</Link>
+          </li>
+          <li className={styles["nav-item"]}>
+            <Link href="/skills">Skills</Link>
+          </li>
+          <li className={styles["nav-item"]}>
+            <Link href="/portfolio">Portfolio</Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }

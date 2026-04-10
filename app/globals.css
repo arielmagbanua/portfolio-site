@@ -1,26 +1,77 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --md-sys-color-primary: rgb(234 241 246);
+  --md-sys-color-surface-tint: rgb(192 199 204);
+  --md-sys-color-on-primary: rgb(0 0 0);
+  --md-sys-color-primary-container: rgb(189 196 201);
+  --md-sys-color-on-primary-container: rgb(6 12 16);
+  --md-sys-color-secondary: rgb(239 240 242);
+  --md-sys-color-on-secondary: rgb(0 0 0);
+  --md-sys-color-secondary-container: rgb(193 195 197);
+  --md-sys-color-on-secondary-container: rgb(9 12 13);
+  --md-sys-color-tertiary: rgb(248 237 246);
+  --md-sys-color-on-tertiary: rgb(0 0 0);
+  --md-sys-color-tertiary-container: rgb(202 192 201);
+  --md-sys-color-on-tertiary-container: rgb(14 10 16);
+  --md-sys-color-error: rgb(255 236 233);
+  --md-sys-color-on-error: rgb(0 0 0);
+  --md-sys-color-error-container: rgb(255 174 164);
+  --md-sys-color-on-error-container: rgb(34 0 1);
+  --md-sys-color-background: rgb(19 19 20);
+  --md-sys-color-on-background: rgb(229 226 226);
+  --md-sys-color-surface: rgb(19 19 20);
+  --md-sys-color-on-surface: rgb(255 255 255);
+  --md-sys-color-surface-variant: rgb(68 71 74);
+  --md-sys-color-on-surface-variant: rgb(255 255 255);
+  --md-sys-color-outline: rgb(238 240 243);
+  --md-sys-color-outline-variant: rgb(192 195 198);
+  --md-sys-color-shadow: rgb(0 0 0);
+  --md-sys-color-scrim: rgb(0 0 0);
+  --md-sys-color-inverse-surface: rgb(229 226 226);
+  --md-sys-color-inverse-on-surface: rgb(0 0 0);
+  --md-sys-color-inverse-primary: rgb(66 73 77);
+  --md-sys-color-primary-fixed: rgb(220 227 233);
+  --md-sys-color-on-primary-fixed: rgb(0 0 0);
+  --md-sys-color-primary-fixed-dim: rgb(192 199 204);
+  --md-sys-color-on-primary-fixed-variant: rgb(11 18 22);
+  --md-sys-color-secondary-fixed: rgb(225 226 228);
+  --md-sys-color-on-secondary-fixed: rgb(0 0 0);
+  --md-sys-color-secondary-fixed-dim: rgb(197 198 200);
+  --md-sys-color-on-secondary-fixed-variant: rgb(15 17 19);
+  --md-sys-color-tertiary-fixed: rgb(234 223 233);
+  --md-sys-color-on-tertiary-fixed: rgb(0 0 0);
+  --md-sys-color-tertiary-fixed-dim: rgb(206 195 205);
+  --md-sys-color-on-tertiary-fixed-variant: rgb(20 15 22);
+  --md-sys-color-surface-dim: rgb(19 19 20);
+  --md-sys-color-surface-bright: rgb(80 80 80);
+  --md-sys-color-surface-container-lowest: rgb(0 0 0);
+  --md-sys-color-surface-container-low: rgb(32 31 32);
+  --md-sys-color-surface-container: rgb(48 48 48);
+  --md-sys-color-surface-container-high: rgb(60 59 59);
+  --md-sys-color-surface-container-highest: rgb(71 70 71);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-primary: var(--md-sys-color-primary);
+  --color-secondary: var(--md-sys-color-secondary);
+  --color-background: var(--md-sys-color-background);
+  --color-foreground: var(--md-sys-color-on-background);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #007bff;
+    --secondary: #6c757d;
   }
-}
+} */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
   font-family: Arial, Helvetica, sans-serif;
 }

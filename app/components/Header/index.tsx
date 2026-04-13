@@ -17,10 +17,7 @@ export default function Header() {
       <nav>
         <ul className="flex justify-between items-baseline gap-8">
           <li className={styles["nav-item"]}>
-            <Link href="/">About</Link>
-          </li>
-          <li className={styles["nav-item"]}>
-            <Link href="/skills">Skills</Link>
+            <Link href="/">Me</Link>
           </li>
           <li className={styles["nav-item"]}>
             <Link href="/portfolio">Portfolio</Link>
